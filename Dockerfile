@@ -7,9 +7,9 @@ FROM lustefaniak/graalvm:8
 
 MAINTAINER Lele991
 
-RUN apk update \
- && apk add --no-cache curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
- && useradd -d /home/container -m container
+RUN apk add --update --no-cache curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+    && adduser -D -h /home/container container \
+    && ln -s /etc/localtime /etc/timezone
 
 USER container
 ENV  USER=container HOME=/home/container
