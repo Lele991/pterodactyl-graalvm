@@ -3,7 +3,7 @@
 # Environment: Java
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM graalvm/graalvm-ce:latest:java8-21.0.0.2
+FROM findepi/graalvm:java8
 
 MAINTAINER Lele991
 
