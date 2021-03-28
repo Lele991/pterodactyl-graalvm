@@ -7,8 +7,8 @@ FROM lustefaniak/graalvm:8
 
 MAINTAINER Lele991
 
-RUN apt-get update -y \
- && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+RUN apk update \
+ && apk add --no-cache curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
  && useradd -d /home/container -m container
 
 USER container
