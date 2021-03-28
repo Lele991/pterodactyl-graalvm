@@ -5,7 +5,7 @@
 # ----------------------------------
 FROM lustefaniak/graalvm:8
 
-MAINTAINER RikoDEV, <kontakt@riko.dev>
+MAINTAINER Lele991
 
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
